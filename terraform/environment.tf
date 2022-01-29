@@ -26,5 +26,5 @@ variable "regions" {
 
 #Sets lookup for region parsing the TF_VAR_loc and searches for a match to provide a longhand location, otherwise, deaults to UK South
 locals {
-  location = lookup(var.regions, var.short, "UK South")
+  location = lookup(var.regions, var.loc, "UK South")
 }
