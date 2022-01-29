@@ -1,21 +1,21 @@
 variable "short" {
   description = "This is passed as an environment variable, it is for a shorthand name for the environment, for example hello-world = hw"
-  type = string
+  type        = string
 }
 
 variable "env" {
   description = "This is passed as an environment variable, it is for the shorthand environment tag for resource.  For example, production = prod"
-  type = string
+  type        = string
 }
 
 variable "loc" {
   description = "The shorthand name of the Azure location, for example, for UK South, use uks.  For UK West, use ukw"
-  type = string
+  type        = string
 }
 
 variable "regions" {
   description = "Long-hand names of regions in terraform"
-  type = map(string)
+  type        = map(string)
   default = {
     uks = "UK South"
     ukw = "UK West"
